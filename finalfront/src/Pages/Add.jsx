@@ -33,7 +33,7 @@ const Add = () => {
     <div className="add">
        <Helmet>
                 <meta charSet="utf-8" />
-                <title>Add</title>
+                <title>Addd</title>
                 <link rel="canonical" href="http://mysite.com/example" />
             </Helmet>
       <h3>Let's go! Add</h3>
