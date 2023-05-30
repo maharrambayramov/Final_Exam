@@ -21,6 +21,11 @@ const Home = () => {
     );
     setProduct(sortedData);
   };
+
+  const aa =() => {
+    console.log("fkoj");
+  }
+
   useEffect(() => {
     getProduct();
   }, []);
