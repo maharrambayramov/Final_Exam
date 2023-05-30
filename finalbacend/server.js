@@ -48,7 +48,7 @@ app.get("/robots", async (req, res) => {
 });
 app.get("/robots/:id", async (req, res) => {
   try {
-    const robotsId = res.params.robotsId;
+    const robotsId = req.params.id;
     const robots = await Robots.findById(robotsId);
     res.send(robots);
   } catch (err) {

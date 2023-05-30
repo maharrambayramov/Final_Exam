@@ -3,10 +3,14 @@ import "./css/Home.css";
 import { Card } from "antd";
 import axios from "axios";
 import { Helmet } from "react-helmet";
+import { useNavigate } from "react-router-dom";
 const { Meta } = Card;
 
 const Home = () => {
   const [product, setProduct] = useState([]);
+
+  const navigate = useNavigate();
+
   const getProduct = async () => {
     const res = await axios.get("http://localhost:5050/robots");
     setProduct(res.data);
@@ -49,6 +53,7 @@ const Home = () => {
               style={{
                 width: 240,
               }}
+              onClick={() => navigate(e._id)}
               cover={<img alt="example" src={e.image} />}
             >
               <Meta title={e.name} description={e.title} />
