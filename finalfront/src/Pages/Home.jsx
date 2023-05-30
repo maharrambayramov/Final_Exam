@@ -15,6 +15,12 @@ const Home = () => {
     const res = await axios.get("http://localhost:5050/robots");
     setProduct(res.data);
   };
+  const sorting = () => {
+    const sortedData = [...product].sort((a, b) =>
+      a.name.localeCompare(b.name)
+    );
+    setProduct(sortedData);
+  };
   useEffect(() => {
     getProduct();
   }, []);
@@ -46,6 +52,7 @@ const Home = () => {
           <p>Who are in extremely love with eco friendly system.</p>
         </div>
         <div className="robots">
+          <button onClick={sorting}>Sort</button>
           {product.map((e) => (
             <Card
               className="robotcar"
