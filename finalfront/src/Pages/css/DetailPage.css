@@ -1,0 +1,23 @@
+.detail{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    padding: 70px 350px;
+}
+
+.page{
+    width: 40%;
+}
+.page img{
+    width: 100%;
+    object-fit: cover;
+}
+.hea{
+    width: 40%;
+}
+.head h6{
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
