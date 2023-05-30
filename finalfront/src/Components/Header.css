@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url("https://preview.colorlib.com/theme/robotics/img/banner-bg.jpg");
+  padding: 20px;
+  padding-left: 175px;
+}
+.navlist {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 20px;
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+}
